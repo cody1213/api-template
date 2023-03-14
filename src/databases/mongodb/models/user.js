@@ -3,7 +3,6 @@ const Schema = mongoose.Schema;
 
 module.exports = new Schema({
   created: { type: Date, default: Date.now },
-  modified: { type: Date, default: Date.now },
   email: {
     type: String,
     required: true,
@@ -12,5 +11,4 @@ module.exports = new Schema({
     index: true,
   },
   token: { type: String },
-  archivedAt: { type: Date, default: null, index: true },
 });
